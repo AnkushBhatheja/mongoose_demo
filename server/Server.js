@@ -10,7 +10,7 @@ var operations = require('../mongodb-operation/operations');
 var portNumber = process.env.PORT || 3000;
 //
 
-app.post('/', (req, res)=> {
+app.get('/', (req, res)=> {
   res.send("Welcom to Students Home Page");
 });
 
