@@ -8,13 +8,14 @@
     "start": "node server/Server.js"
   },
   "engines": {
-    "node" : "6.10.2"
+    "node": "6.10.2"
   },
   "author": "Ankush Bhatheja",
   "license": "ISC",
   "dependencies": {
     "Promise": "^1.0.5",
     "body-parser": "^1.18.2",
+    "express": "^4.16.2",
     "lodash": "^4.17.4",
     "mongodb": "^2.2.33",
     "mongoose": "^4.13.6",
