@@ -8,6 +8,11 @@ app.use(bodyParser.json());
 var operations = require('../mongodb-operation/operations');
 
 var portNumber = process.env.PORT || 3000;
+//
+
+app.post('/', (req, res)=> {
+  res.send("Welcom to Students Home Page");
+});
 
 //...................... adding a new stundent.............................
 
