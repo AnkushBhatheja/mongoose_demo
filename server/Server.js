@@ -7,6 +7,8 @@ app.use(bodyParser.json());
 
 var operations = require('../mongodb-operation/operations');
 
+var portNumber = process.env.PORT || 3000;
+
 //...................... adding a new stundent.............................
 
 app.post('/Students', (req, res)=> {
@@ -94,4 +96,6 @@ app.delete('/Students/:id', (req, res)=> {
 
 
 
-app.listen(3000);
+app.listen(portNumber, ()=> {
+  console.log('On port : '+portNumber);
+});
